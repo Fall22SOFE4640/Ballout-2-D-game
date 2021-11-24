@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>MAIN MENU</title>
+
+      <style>
+          body{
+               background-image: url(background.jpg);
+          }
+          canvas {
+        background: darkgray;
+        display: block;
+        margin: 100px;
+      }
+          #myCanvas {
+        position: absolute;
+         top: 2px;
+         left:400px;
+      }
+      table{
+           position: absolute;
+         top: 300px;
+         left:650px;
+      }
+    table th{
+      text-align: left;
+      background-color: red;
+      color: #FFF;
+      padding: 4px 30px 4px 8px;
+         }
+
+    table td{
+        border: 1px solid #e3e3e3;
+        padding: 4px 8px;
+    }
+
+    #nav {
+ /* Add a black background color to the top navigation */
+        background-color: #333;
+        overflow: hidden;
+       }
+  
+/* Style the links inside the navigation bar */
+    #nav a{
+
+       float: left;
+       color: white;
+       text-align: center;
+       display: inline block;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+       text-indent: 130px;
+
+    }
+ /* Change the color of links on hover */
+    #nav a:hover {
+        background-color: white;
+        color: black;
+    }
+  /* changes the color based on the active link the user is on
+    #nav a.active {
+        background-color: black;
+        color: white;
+    } */
+    
+      </style>
+      </head>
+<body>  
+    <div id=nav>
+        <a href="Intropg.html" id="Intropg" class="Welcome">Welcome</a>
+        <a href="Instructions.html" id="Instruction" class="Instructions">Game Instructions</a>
+        <a href="2-D-ball-layout.html" id="2-D-game" class="2-D-game-tab">2-D-game-tab</a>
+        <a href="survey.php" id="survey" class="survey">Exit Survey</a>
+        <a href="logout.php" class="btn">Log-out</a>
+    </div>
+
+
+
+
+        <canvas id="myCanvas" width="600" height="550" style="border:1px solid #d3d3d3;"></canvas>
+        <!-- <button type="button" id="nextbtn">Next</button> -->
+<table>
+    <tr>
+        <th>DEVELOPERS</th>
+        <th>STUDENT ID</th>
+    </tr>
+
+    <tr>
+        <td>Jean Paul Saliba </td>
+        <td>100741759</td>
+    </tr>
+
+     <tr>
+        <td>Waleed El Alawi </td>
+        <td>100767090</td>
+    </tr>
+
+    <tr>
+        <td>Gutu Shiferaw </td>
+        <td>100767090</td>
+    </tr>
+   
+</table>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillStyle = 'yellow';
+        ctx.fillText("Welcome to the Game of Ball Out 2",70,100);
+    </script>
+
+</body>
+</html>

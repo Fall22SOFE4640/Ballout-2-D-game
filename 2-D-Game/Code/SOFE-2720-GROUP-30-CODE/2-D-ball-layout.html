@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel = "stylesheet" href = "style2.css">
+  <center>
+
+  <style>
+
+    body{
+      background-image: url(background.jpg); /*background */
+    }
+
+  </style>
+   
+
+
+</head>
+
+<body>
+ 
+
+  <div id=nav>
+        <a href="Intropg.html" id="Intropg" class="Welcome">Welcome</a>
+        <a href="Instructions.html" id="Instruction" class="Instructions">Game Instructions</a>
+        <a href="2-D-ball-layout.html" id="2-D-game" class="2-D-game-tab">2-D-game-tab</a>
+        <a href="survey.php" id="survey" class="survey">Exit Survey</a>
+        <a href="logout.php" class="btn">Log-out</a>
+   </div>
+
+
+
+  <div id="container">
+    <button type="button" id="startBtn" onclick="draw()">
+    	<img src="https://1.bp.blogspot.com/-fVAKH-3TLuo/W5onDDHje0I/AAAAAAAAB4I/q2ooE6GuzQkS80dtw1JILXjFWdfQ3IKkwCLcBGAs/s1600/breaoutplay.png">
+    </button>
+    <button type="button" name="easy" class="addButton" id="easyBtn" onclick="changeDiff(1)" >
+      <!-- <img src="Easybtn.png" height="50" width="120"> -->
+      Easy
+      </button>
+
+    <button type="button" class="addButton" id="mediumBtn" onclick="changeDiff(2)" >
+      <!-- <img src="Mediumbtn.png" height="50" width="120" onclick="changeDiff(2)"> -->
+      Medium
+      </button>
+      
+    <button type="button" class="addButton" id="hardBtn" onclick="changeDiff(3)">
+      <!-- <img src="Hardbtn.png" height="50" width="120" onclick="changeDiff(3)"> -->
+      Hard
+      </button>
+
+    <button class="reset" id="resetHighScore" onclick="ResetHighScore()">Reset High Score</button>
+
+    <canvas style="display: flex; align-items: center; justify-content: center;" id="myCanvas" width="600" height="550"></canvas>
+  </div>
+
+  <div class="high-score"></div>
+  <!-- <button class="reset" id="resetHighScore">Reset High Score</button> -->
+
+
+
+  
+  <div id="next">
+    <!-- <button type="button" id="NextBtn" onclick="">
+    	<img src="http://www.pngmart.com/files/3/Next-Button-PNG-Pic.png" alt="failed to load image" width="300" height="150" onclick=" ">
+    </button> -->
+    <!-- <canvas id="myCanvas1" width="450" height="250"></canvas> -->
+  </div>
+
+
+  <script src = "2-D-ball-game.js"></script>
+  
+
+</body>
+</html>

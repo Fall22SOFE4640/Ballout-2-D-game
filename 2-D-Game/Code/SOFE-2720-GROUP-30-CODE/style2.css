@@ -1,0 +1,131 @@
+.high-score {
+  position: absolute;
+  top: 7rem;
+  width: 90%;
+  left: 5.3%;
+  text-align: center;
+  color: red;
+  font-weight: bolder; 
+  font-size: x-large;
+}
+
+.reset{
+  position: absolute; 
+  top: 570px; 
+  z-index: 1; 
+  left: 218px; 
+  font-size: 42px; 
+  background-color: black; 
+  color:orange; 
+  font-weight: bolder; 
+  font-family: Arial, Helvetica, sans-serif; 
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: white 
+}
+
+#easyBtn {
+
+  position: absolute; 
+  top: 150px; 
+  z-index: 1; 
+  left: 175px; 
+  font-size: 42px; 
+  background-color: black; 
+  color:orange; 
+  font-weight: bolder; 
+  font-family: Arial, Helvetica, sans-serif; 
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: white 
+
+}
+
+#mediumBtn {
+  position: absolute; 
+  top: 150px; 
+  left: 330px; 
+  z-index: 2; 
+  font-size: 42px; 
+  background-color: black; 
+  color:orange; 
+  font-weight: bolder; 
+  font-family: Arial, Helvetica, sans-serif; 
+  border-radius: 10px; 
+  border-style: dotted; 
+  border-color: white;
+}
+
+#hardBtn {
+  position: absolute; 
+  top: 150px; 
+  z-index: 1; 
+  right: 160px; 
+  font-size: 42px; 
+  background-color: black;
+  color: orange; 
+  font-weight: bolder; 
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px; 
+  border-style: dotted;
+  border-color: white
+}
+#nav {
+  /* Adds a black background color to the top navigation */
+         background-color: #333;
+         overflow: hidden;
+        }
+   
+ /* Styles the links inside the navigation bar */
+     #nav a{
+ 
+         float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-indent: 130px;
+        
+ 
+     }
+  /* Changes the color of links on hover */
+     #nav a:hover {
+         background-color: white;
+         color: black;
+     }
+body {
+        background-color: peachpuff;
+      }          
+      * {
+        padding: 0;
+        margin: 0;
+      }          
+      canvas {
+        background:skyblue;
+        display: block;
+        margin: 100px;
+      }          
+      #startBtn {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+      }          
+      #container {
+        display: inline-block;
+        position: relative;
+      }  
+      
+     
+      #myCanvas {
+        position: relative;
+      }
+
+    
